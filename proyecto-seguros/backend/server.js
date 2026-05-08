@@ -25,7 +25,7 @@ function guardarDatos(data) {
     fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
 }
 
-// --- NUEVA FUNCIÓN: Genera el ID autoincremental ---
+// --- Genera el ID autoincremental ---
 function generarSiguienteId(data) {
     if (!data || data.length === 0) return "ID00001";
     
@@ -64,7 +64,7 @@ app.get('/polizas/:id_poliza', (req, res) => {
     }
 });
 
-// POST /polizas - Crea una nueva póliza (ACTUALIZADO PARA AUTO-ID)
+// POST /polizas - Crea una nueva póliza
 app.post('/polizas', (req, res) => {
     try {
         const data = leerDatos();

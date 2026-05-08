@@ -1,7 +1,6 @@
 import { createContext, useContext } from 'react';
 
-// Aquí guardamos las expresiones regulares de validación en el contexto
-// como pide el enunciado
+
 
 export const ValidacionContext = createContext();
 

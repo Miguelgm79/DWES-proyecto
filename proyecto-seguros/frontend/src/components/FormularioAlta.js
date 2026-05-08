@@ -104,7 +104,7 @@ function FormularioAlta({ onPolizaCreada }) {
             )}
             <form onSubmit={handleSubmit} className="formulario">
                 <div className="form-grid">
-                    {/* Hemos eliminado el campo ID Póliza */}
+                    {}
 
                     <div className="campo">
                         <label>Matrícula *</label>
